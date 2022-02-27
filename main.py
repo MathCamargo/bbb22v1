@@ -60,4 +60,5 @@ while True:
     for j in notoriedade:
         df.loc[df['Participante'] == j, 'Mencoes'] = df['Mencoes'] + notoriedade[j]
     df.to_excel('notor.xlsx', index=False, encoding='UTF-8')
+    print(df)
     sleep(3600)
